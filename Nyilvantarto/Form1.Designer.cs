@@ -38,7 +38,7 @@ namespace Nyilvantarto
             this.tbNev = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tbOsszeg = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnTranzakcio = new System.Windows.Forms.Button();
             this.lbEgyenleg = new System.Windows.Forms.Label();
             this.btnMentes = new System.Windows.Forms.Button();
             this.btnBetoltes = new System.Windows.Forms.Button();
@@ -129,14 +129,14 @@ namespace Nyilvantarto
             this.tbOsszeg.Size = new System.Drawing.Size(169, 26);
             this.tbOsszeg.TabIndex = 3;
             // 
-            // button1
+            // btnTranzakcio
             // 
-            this.button1.Location = new System.Drawing.Point(516, 240);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 31);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Tranzakció indítása";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnTranzakcio.Location = new System.Drawing.Point(516, 240);
+            this.btnTranzakcio.Name = "btnTranzakcio";
+            this.btnTranzakcio.Size = new System.Drawing.Size(173, 31);
+            this.btnTranzakcio.TabIndex = 4;
+            this.btnTranzakcio.Text = "Tranzakció indítása";
+            this.btnTranzakcio.UseVisualStyleBackColor = true;
             // 
             // lbEgyenleg
             // 
@@ -182,7 +182,7 @@ namespace Nyilvantarto
             this.ClientSize = new System.Drawing.Size(701, 439);
             this.Controls.Add(this.btnBetoltes);
             this.Controls.Add(this.btnMentes);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnTranzakcio);
             this.Controls.Add(this.tbOsszeg);
             this.Controls.Add(this.tbNev);
             this.Controls.Add(this.gbTipus);
@@ -216,7 +216,7 @@ namespace Nyilvantarto
         private System.Windows.Forms.TextBox tbNev;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbOsszeg;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnTranzakcio;
         private System.Windows.Forms.Label lbEgyenleg;
         private System.Windows.Forms.Button btnMentes;
         private System.Windows.Forms.Button btnBetoltes;
