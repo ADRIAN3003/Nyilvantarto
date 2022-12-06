@@ -43,6 +43,7 @@ namespace Nyilvantarto
             this.btnMentes = new System.Windows.Forms.Button();
             this.btnBetoltes = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.ofdMegynyitas = new System.Windows.Forms.OpenFileDialog();
             this.gbTipus.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +69,7 @@ namespace Nyilvantarto
             // 
             this.gbTipus.Controls.Add(this.rbKi);
             this.gbTipus.Controls.Add(this.rbBe);
+            this.gbTipus.Enabled = false;
             this.gbTipus.Location = new System.Drawing.Point(516, 9);
             this.gbTipus.Name = "gbTipus";
             this.gbTipus.Size = new System.Drawing.Size(173, 100);
@@ -78,6 +80,7 @@ namespace Nyilvantarto
             // rbBe
             // 
             this.rbBe.AutoSize = true;
+            this.rbBe.Checked = true;
             this.rbBe.Location = new System.Drawing.Point(31, 28);
             this.rbBe.Name = "rbBe";
             this.rbBe.Size = new System.Drawing.Size(94, 24);
@@ -108,6 +111,7 @@ namespace Nyilvantarto
             // 
             // tbNev
             // 
+            this.tbNev.Enabled = false;
             this.tbNev.Location = new System.Drawing.Point(520, 150);
             this.tbNev.Name = "tbNev";
             this.tbNev.Size = new System.Drawing.Size(169, 26);
@@ -124,6 +128,7 @@ namespace Nyilvantarto
             // 
             // tbOsszeg
             // 
+            this.tbOsszeg.Enabled = false;
             this.tbOsszeg.Location = new System.Drawing.Point(520, 208);
             this.tbOsszeg.Name = "tbOsszeg";
             this.tbOsszeg.Size = new System.Drawing.Size(169, 26);
@@ -131,12 +136,14 @@ namespace Nyilvantarto
             // 
             // btnTranzakcio
             // 
+            this.btnTranzakcio.Enabled = false;
             this.btnTranzakcio.Location = new System.Drawing.Point(516, 240);
             this.btnTranzakcio.Name = "btnTranzakcio";
             this.btnTranzakcio.Size = new System.Drawing.Size(173, 31);
             this.btnTranzakcio.TabIndex = 4;
             this.btnTranzakcio.Text = "Tranzakció indítása";
             this.btnTranzakcio.UseVisualStyleBackColor = true;
+            this.btnTranzakcio.Click += new System.EventHandler(this.btnTranzakcio_Click);
             // 
             // lbEgyenleg
             // 
@@ -144,18 +151,20 @@ namespace Nyilvantarto
             this.lbEgyenleg.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbEgyenleg.Location = new System.Drawing.Point(514, 312);
             this.lbEgyenleg.Name = "lbEgyenleg";
-            this.lbEgyenleg.Size = new System.Drawing.Size(120, 33);
+            this.lbEgyenleg.Size = new System.Drawing.Size(69, 33);
             this.lbEgyenleg.TabIndex = 0;
-            this.lbEgyenleg.Text = "8000 Ft";
+            this.lbEgyenleg.Text = "0 Ft";
             // 
             // btnMentes
             // 
+            this.btnMentes.Enabled = false;
             this.btnMentes.Location = new System.Drawing.Point(12, 362);
             this.btnMentes.Name = "btnMentes";
             this.btnMentes.Size = new System.Drawing.Size(498, 31);
             this.btnMentes.TabIndex = 4;
             this.btnMentes.Text = "Állapot mentése";
             this.btnMentes.UseVisualStyleBackColor = true;
+            this.btnMentes.Click += new System.EventHandler(this.btnMentes_Click);
             // 
             // btnBetoltes
             // 
@@ -165,6 +174,7 @@ namespace Nyilvantarto
             this.btnBetoltes.TabIndex = 4;
             this.btnBetoltes.Text = "Állapot betöltése";
             this.btnBetoltes.UseVisualStyleBackColor = true;
+            this.btnBetoltes.Click += new System.EventHandler(this.btnBetoltes_Click);
             // 
             // label5
             // 
@@ -174,6 +184,11 @@ namespace Nyilvantarto
             this.label5.Size = new System.Drawing.Size(67, 20);
             this.label5.TabIndex = 0;
             this.label5.Text = "Összeg:";
+            // 
+            // ofdMegynyitas
+            // 
+            this.ofdMegynyitas.Filter = "Adatfájl|*.txt";
+            this.ofdMegynyitas.Title = "Fájl megnyitása";
             // 
             // Form1
             // 
@@ -221,6 +236,7 @@ namespace Nyilvantarto
         private System.Windows.Forms.Button btnMentes;
         private System.Windows.Forms.Button btnBetoltes;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.OpenFileDialog ofdMegynyitas;
     }
 }
 

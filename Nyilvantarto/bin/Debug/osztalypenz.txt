@@ -6,3 +6,7 @@
 5. tranzakció: Lajos befizetett 1000 Ft-ot. 2019. 06. 27. 9:24:46
 6. tranzakció: Lajos befizetett 3000 Ft-ot. 2019. 06. 27. 9:26:17
 7. tranzakció: 3000 Ft-ot kifizettünk Lajos részére. 2019. 06. 27. 9:26:17
+8. tranzakció: Valaki befizetett 20000 Ft-ot.
+9. tranzakció: Valaki befizetett 23000 Ft-ot.
+10. tranzakció: 23000 Ft-ot kifizettünk Valaki részére.
+11. tranzakció: 20000 Ft-ot kifizettünk Valaki részére.
